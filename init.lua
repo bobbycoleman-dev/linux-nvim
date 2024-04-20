@@ -3,7 +3,7 @@ vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
 
-require('vim-options')
+require 'vim-options'
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
@@ -46,3 +46,4 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+

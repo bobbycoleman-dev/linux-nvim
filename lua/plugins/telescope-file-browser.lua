@@ -1,13 +1,14 @@
 return {
-	"nvim-telescope/telescope-file-browser.nvim",
-	enabled = true,
+  'nvim-telescope/telescope-file-browser.nvim',
+  enabled = true,
 
-	dependencies = {
-		"nvim-telescope/telescope.nvim",
-		"nvim-lua/plenary.nvim",
-	},
+  dependencies = {
+    'nvim-telescope/telescope.nvim',
+    'nvim-lua/plenary.nvim',
+  },
 
-	config = function()
-		require("telescope").load_extension("file_browser")
-	end,
+  config = function()
+    require('telescope').load_extension 'file_browser'
+  end,
 }
+

@@ -17,8 +17,8 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 -- Split window
-vim.keymap.set('n', 'ss', ':split<CR>', opts)
-vim.keymap.set('n', 'sv', ':vsplit<CR>', opts)
+vim.keymap.set('n', 'ss', ':split<CR>')
+vim.keymap.set('n', 'sv', ':vsplit<CR>')
 
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -29,9 +29,9 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
-vim.keymap.set('n', '<leader>w', ':w<CR>', opts)
-vim.keymap.set('n', '<leader>q', ':q<CR>', opts)
-vim.keymap.set('n', '<leader>Q', ':qa<CR>', opts)
+vim.keymap.set('n', '<leader>w', ':w<CR>')
+vim.keymap.set('n', '<leader>q', ':q<CR>')
+vim.keymap.set('n', '<leader>Q', ':qa<CR>')
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
